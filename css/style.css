@@ -3,20 +3,26 @@
     src: url(/Users/brycemajors/Downloads/chakra-petch/ChakraPetch-Bold.ttf) format("truetype");
 }
 
+:root {
+    --txt: rgb(185, 185, 185);
+    --color: #e6007e;
+}
+
 body {
     height: 100vh;
     margin: 0;
     display: flex;
+    font-family: "cyberFont";
 }
 
 .backgroundSide {
     width: 29%;
-    max-width: 564px;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("/Users/brycemajors/repos/signupForm/img/CoolPixelArt.jpeg");
 }
 
 .formSide {
-    background-color: red;
     width: 71%;
     display: flex;
     flex-direction: column;
@@ -45,16 +51,86 @@ body {
 }
 
 .intro {
-    background-color: orange;
     height: 35%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: var(--txt);
+}
+
+.intro p {
+    font-family: "cyberFont";
+    font-size: 24px;
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
 .form {
-    background-color: pink;
+    background-color: rgb(10, 10, 10);
+    color: #b9b9b9b1;
     height: 30%;
+    align-items: flex-end;
+    box-shadow: 5px 0px 10px white;
 }
 
 .createAcct {
     background-color: grey;
     height: 35%;
+    background-color: black;  
+    box-shadow: 5px 0px 10px white; 
 }
+
+.createAcct div {
+    padding: 40px;
+}
+
+.createAcct button {
+    width: 250px;
+    height: 50px;
+    background-color: black;
+    color: var(--color);
+    border-color: var(--color);
+    border-radius: 4px;
+    font-family: "cyberFont";
+    font-size: 20px;
+
+}
+
+.createAcct p {
+    color: var(--txt);
+}
+
+label {
+    display: flex;
+    width: 200px;
+}
+
+input {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.formArea {
+    flex: auto;
+    margin: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.formArea div {
+    width: 40%;
+}
+
+.form legend {
+    margin-left: 38px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+a {
+    color: var(--color);
+    text-decoration: none;
+}
+
