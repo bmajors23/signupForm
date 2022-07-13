@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "cyberFont";
+    src: url(/Users/brycemajors/Downloads/chakra-petch/ChakraPetch-Bold.ttf) format("truetype");
+}
+
+h1 {
+    font-family: "cyberFont";
+}
