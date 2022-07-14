@@ -1,6 +1,6 @@
 @font-face {
     font-family: "cyberFont";
-    src: url(/Users/brycemajors/Downloads/chakra-petch/ChakraPetch-Bold.ttf) format("truetype");
+    src: url(../ChakraPetch-Bold.ttf) format("truetype");
 }
 
 :root {
@@ -33,7 +33,7 @@ body {
     width: 564px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/Users/brycemajors/repos/signupForm/img/CoolPixelArt.jpeg");
+    background-image: url("../img/CoolPixelArt.jpeg");
 }
 
 @media only screen and (max-width: 840px) {
