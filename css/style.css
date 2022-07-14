@@ -15,12 +15,34 @@ body {
     font-family: "cyberFont";
 }
 
+@media only screen and (max-width: 840px) {
+    body {
+      flex-direction: column;
+    }
+  }
+
 .backgroundSide {
-    width: 29%;
+    position: sticky;
+    flex: auto;
+    width: 564px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/Users/brycemajors/repos/signupForm/img/CoolPixelArt.jpeg");
 }
+
+@media only screen and (max-width: 840px) {
+    .backgroundSide {
+      position: static;
+      width: 100%;
+      flex: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: none;
+      height: 100%;
+      max-width: 100%;
+    }
+  }
 
 .formSide {
     width: 71%;
@@ -28,7 +50,15 @@ body {
     flex-direction: column;
 }
 
+@media only screen and (max-width: 840px) {
+    .formSide {
+      width: 100%;
+      flex: auto;
+    }
+  }
+
 .title {
+    flex: auto;
     background-color: rgba(0, 0, 0, 0.5);
     height: 10%;
     margin-top: 32%;
@@ -36,6 +66,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 840px) {
+    .title {
+        width: 100%;
+      height: 100%;
+      margin-top: 0%;
+      max-width: 100%;
+      flex: auto;
+    }
+  }
 
 .title h1 {
     color: white;
@@ -50,8 +90,14 @@ body {
     margin-top: 10px;
 }
 
+@media only screen and (max-width: 300px) {
+    .title h1 {
+      font-size: 30px;
+    }
+  }
+
 .intro {
-    height: 35%;
+    flex: auto;
     display: flex;
     align-items: center;
     background-color: black;
@@ -61,21 +107,22 @@ body {
 .intro p {
     font-family: "cyberFont";
     font-size: 24px;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding: 50px;
 }
 
 .form {
     background-color: rgb(10, 10, 10);
     color: #b9b9b9b1;
-    height: 30%;
+    flex: auto;
     align-items: flex-end;
     box-shadow: 5px 0px 10px white;
+    display: flex;
+    align-items: center;
 }
 
 .createAcct {
     background-color: grey;
-    height: 35%;
+    flex: auto;
     background-color: black;  
     box-shadow: 5px 0px 10px white; 
 }
@@ -96,13 +143,20 @@ body {
 
 }
 
+@media only screen and (max-width: 300px) {
+    .createAcct button {
+      width: 200px;
+      height: 50px;
+    }
+  }
+
 .createAcct p {
     color: var(--txt);
 }
 
 label {
     display: flex;
-    width: 200px;
+    width: 100%;
 }
 
 input {
@@ -123,14 +177,10 @@ input {
     width: 40%;
 }
 
-.form legend {
-    margin-left: 38px;
-    margin-top: 10px;
-    margin-bottom: -20px;
-}
-
 a {
     color: var(--color);
     text-decoration: none;
 }
+
+
 
